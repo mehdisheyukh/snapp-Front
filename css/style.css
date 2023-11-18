@@ -1,0 +1,537 @@
+/* ================ Reset Css ================ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: IRANSansMobile-fa;
+}
+
+/* ================ End Reset Css ================ */
+
+/* ================ NavBar Start ================ */
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 2rem 4rem;
+  gap: 18px;
+}
+
+.header-section {
+  height: 6rem;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ================ End NavBar ================ */
+
+/* ================ Start Section Main ================ */
+
+.section-main1 {
+  display: flex;
+}
+
+.section-main1 > div {
+  width: 800px;
+  height: 400px;
+}
+
+.section-main1 > div > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-main1 > .sm-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sm-1 {
+  background-color: #21aa58;
+  padding-right: 5rem;
+  padding-left: 2rem;
+}
+
+.sm-2 img {
+  transform: scaleX(-1);
+}
+
+#sm-d-txt1 {
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+#sm-d-txt2 {
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+#sm-d1 {
+  padding-bottom: 3rem;
+  display: flex;
+}
+
+#sm-d-it1 {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.384);
+  border-style: hidden;
+  border-bottom: 1px solid #ffffffc7;
+  padding-bottom: 1rem;
+}
+
+#sm-d-btn1 {
+  padding: 0.75rem 2rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  color: #33bc36;
+  font-size: 0.85rem;
+  font-family: IRANSansMobile-fa;
+  margin-right: 1rem;
+  border-style: hidden;
+}
+
+#sm-d-btn2 {
+  padding: 0.75rem 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: IRANSansMobile-fa;
+  color: white;
+}
+
+/* ================ End Section Main ================ */
+
+/* ================ Start Article Main ================ */
+
+.logo-dlapp {
+  display: flex;
+  margin: 4rem 0;
+  justify-content: center;
+}
+
+.logo-dlapp a img {
+  height: 47px;
+  width: 160px;
+}
+
+.logo-dlapp a {
+  padding-left: 2.5rem;
+}
+
+.box-main {
+  width: 286px;
+  height: 85px;
+}
+
+.main-box-art {
+  background-color: #f2f5f8;
+}
+
+#mbox-title {
+  display: inline-block;
+  margin: 50px 0;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: grey;
+  width: 100%;
+}
+
+#art-ma-tx {
+  display: flex;
+  color: black;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.ma-box-artall {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.last {
+  padding-bottom: 4rem;
+}
+
+/* ================ SliderShow start ================ */
+
+.w3-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w3-display-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  border-radius: 2rem;
+}
+
+.w3-container:after,
+.w3-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w3-section {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.w3-large {
+  font-size: 18px !important;
+}
+
+.w3-text-white {
+  color: #fff !important;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+.w3-display-bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+.w3-left {
+  float: left !important;
+}
+
+.w3-right {
+  float: right !important;
+}
+
+.w3-hover-text-khaki:hover {
+  color: #b4aa50 !important;
+}
+
+.w3-badge {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  text-align: center;
+}
+
+.w3-badge {
+  border-radius: 50%;
+}
+
+.w3-border {
+    border: 1px solid #ccc !important;
+  }
+
+.w3-transparent {
+  background-color: transparent !important;
+}
+
+.w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+/* ================ SliderShow End ================ */
+
+
+/* ================ Product Start ================ */
+
+
+#pr-one {
+    display: flex;
+}
+
+.pro-div {
+    width: 50%;
+}
+
+.pro-div h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.pro-div p {
+    color: gray;
+    text-align: justify;
+    width: 75%;
+}
+
+
+/* ================ Product End ================ */
+
+
+/* ================ Product Two Start ================ */
+
+#pr-two {
+    margin-top: -4rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.pr-tw-col{
+    background-color: #f2f5f8;
+    height: 190px;
+    width: 246px;
+    border-radius: 1rem;
+}
+
+.pr-col {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: grey;
+}
+
+.pr-tx {
+    font-size: 0.75rem;
+    color: rgb(96, 96, 96);
+    text-align: justify;
+}
+
+/* ================ Product Two End ================ */
+
+
+/* ================ Product Three Start ================ */
+
+.main-box-art2 {
+    background-color: #f2f5f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+.main-box-art2 p:first-child {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+    padding-top: 2.5rem;
+}
+
+.main-box-art2 p {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    padding-top: 1.5rem;
+}
+
+#mn-bobu {
+    font-size: 1rem;
+    background-color: rgb(0, 209, 112);
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    border-style: hidden;
+    font-family: IRANSansMobile-fa;
+    padding: 0.75rem 1.4rem;
+    margin: 2rem 0;
+}
+
+#vid {
+    width: 80%;
+    height: 80%;
+    border-radius: 0.75rem;
+    margin: 2rem auto;
+}
+
+#table-str {
+    display: flex;
+    justify-content: center;
+}
+
+.table-str-all {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 1rem;
+  height: 200px;
+  width: 484px;
+  align-items: center;
+  text-align: justify;
+  padding: 0 1rem;
+  margin: 0.7rem 0.7rem;
+}
+
+#table-str div:last-child {
+    margin-bottom: 2rem;
+}
+
+/* ================ Product Three End ================ */
+
+.nav-list2 {
+    display: flex;
+    list-style-type: none;
+    padding: 2rem 4rem;
+    gap: 18px;
+    justify-content: center;
+}
+
+.nav-list2 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem 2rem;
+    gap: 7px;
+    justify-content: center;
+  }
+
+/* ================ End Article Main ================ */
