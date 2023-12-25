@@ -3,14 +3,12 @@
   font-style: normal;
   font-weight: bold;
   src: url("./fonts/fa-Iran-sans-web-bold.woff2") format("woff2");
-  font-display: fallback;
 }
 @font-face {
   font-family: IRANSansMobile-fa;
   font-style: normal;
   font-weight: 300;
   src: url("./fonts/fa-Iran-sans-web-light.woff2") format("woff2");
-  font-display: fallback;
 }
 .keen-slider:not([data-keen-slider-disabled]) {
   -webkit-touch-callout: none;
@@ -478,7 +476,7 @@ pre {
 @media (min-width: 1024px) {
   .pro-div:first-of-type {
     width: 49%;
-    height: 60vh;
+    height: 100vh;
   }
 }
 
@@ -503,16 +501,16 @@ pre {
 #pr-two {
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 @media (min-width: 768px) {
   #pr-two {
     flex-direction: row;
+    justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   #pr-two {
-    justify-content: center;
+    margin-top: -60px;
   }
 }
 
@@ -527,8 +525,6 @@ pre {
 @media (min-width: 1024px) {
   .pr-tw-col {
     width: 22%;
-    position: relative;
-    top: -120px;
   }
 }
 
@@ -561,35 +557,40 @@ pre {
   flex-direction: column;
 }
 .main-box-art2 p {
-  font-size: 1rem;
+  font-size: 20px;
   text-align: center;
   color: rgb(75, 75, 75);
   padding-top: 1.5rem;
 }
 .main-box-art2 p:first-child {
-  font-size: 1.7rem;
+  font-size: 36px;
   font-weight: bold;
+  line-height: 52px;
   color: rgb(75, 75, 75);
-  padding-top: 2.5rem;
 }
 
 #mn-bobu {
-  font-size: 1rem;
+  font-size: 18px;
   background-color: rgb(0, 209, 112);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   color: white;
   font-weight: bold;
   border-style: hidden;
   font-family: IRANSansMobile-fa;
-  padding: 0.75rem 1.4rem;
-  margin: 2rem 0;
+  padding: 10px 28px;
+  margin-top: 20px;
 }
 
 #vid {
   width: 80%;
   height: 80%;
-  border-radius: 0.75rem;
-  margin: 2rem auto;
+  border-radius: 12px;
+  margin: 24px auto;
+}
+@media (min-width: 1024px) {
+  #vid {
+    margin: 40px auto;
+  }
 }
 
 #table-str {
@@ -602,12 +603,16 @@ pre {
   flex-direction: row-reverse;
   background-color: white;
   border-radius: 1rem;
-  height: 200px;
-  width: 484px;
   align-items: center;
   text-align: justify;
-  padding: 0 1rem;
-  margin: 0.7rem 0.7rem;
+}
+@media (min-width: 1024px) {
+  .table-str-all {
+    height: 200px;
+    width: 484px;
+    padding: 0 1rem;
+    margin: 0.7rem 0.7rem;
+  }
 }
 
 #table-str div:last-child {

@@ -5,7 +5,6 @@ $fa-iran: "./fonts";
   font-style: normal;
   font-weight: bold;
   src: url("#{$fa-iran}/fa-Iran-sans-web-bold.woff2") format("woff2");
-  font-display: fallback;
 }
 
 @font-face {
@@ -13,6 +12,5 @@ $fa-iran: "./fonts";
     font-style: normal;
     font-weight: 300;
     src: url("#{$fa-iran}/fa-Iran-sans-web-light.woff2") format("woff2");
-    font-display: fallback;
   }
 
