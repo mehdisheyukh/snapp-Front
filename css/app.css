@@ -1,15 +1,3 @@
-@font-face {
-  font-family: IRANSansMobile-fa;
-  font-style: normal;
-  font-weight: bold;
-  src: url("./fonts/fa-Iran-sans-web-bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: IRANSansMobile-fa;
-  font-style: normal;
-  font-weight: 300;
-  src: url("./fonts/fa-Iran-sans-web-light.woff2") format("woff2");
-}
 .keen-slider:not([data-keen-slider-disabled]) {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
