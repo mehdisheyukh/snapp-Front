@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/font-fa.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <title>سوپر اپلیکیشن اسنپ</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
@@ -355,56 +354,16 @@
 
         <!-- SliderShow start -->
 
-        <div
-          class="w3-content w3-display-container"
-          style="width: 80%; height: 80%; margin: 3rem auto"
-        >
-          <img
-            class="mySlides"
-            src="./img/slider-img/Food.jpg"
-            style="width: 100%"
-          />
-          <img
-            class="mySlides"
-            src="./img/slider-img/Market.jpg"
-            style="width: 100%"
-          />
-          <img
-            class="mySlides"
-            src="./img/slider-img/Driver.jpg"
-            style="width: 100%"
-          />
-          <img
-            class="mySlides"
-            src="./img/slider-img/Club.jpg"
-            style="width: 100%"
-          />
-          <div
-            class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-            style="
-              width: 10%;
-              text-align: center;
-              background-color: rgba(255, 255, 255, 0.465);
-              border-radius: 2rem;
-            "
-          >
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              onclick="currentDiv(1)"
-            ></span>
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              onclick="currentDiv(2)"
-            ></span>
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              onclick="currentDiv(3)"
-            ></span>
-            <span
-              class="w3-badge demo w3-border w3-transparent w3-hover-white"
-              onclick="currentDiv(4)"
-            ></span>
+        <div>
+          <div id="my-keen-slider" class="keen-slider">
+            <div class="keen-slider__slide number-slide1"></div>
+            <div class="keen-slider__slide number-slide2"></div>
+            <div class="keen-slider__slide number-slide3"></div>
+            <div class="keen-slider__slide number-slide4"></div>
           </div>
+
+          <script src="./script/keen-slider.min.js"></script>
+          <script src="./script/script.js"></script>
         </div>
 
         <!-- SliderShow End -->
@@ -412,26 +371,14 @@
         <!-- Product Start -->
 
         <article id="pr-one">
-          <div class="pro-div">
-            <img
-              style="height: 400px; width: 95%"
-              src="./img/product-img/super-app.jpg"
-              alt="عکس محصول یک"
-            />
-          </div>
+          <div class="pro-div"></div>
 
           <div class="pro-div">
             <h2>سوپر اپ اسنپ; پاسخی به تمام نیازها</h2>
 
-            <p>
-              اسنپ، اولین تاکسی اینترنی ایران، بعد از پنج سال فعالیت در حوزه ی
-              تردد شهری ، به یک سوپراپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ راه
-              حلی جدید و ساده است که با استفاده از آن تنها با یک اپلیکیشن می
-              توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از
-              جمله سفارش غذا، پزشک و مشاور آنلاین، خرید از سوپرمارکتها و فروشگاه
-              ها، اسلال کشی، خرید بلیط (هواپیما ، اتوبوس ، قطار)، رزرو هتل ،
-              پرداخت قبض و خرید شارژ استفاده کنید.
-            </p>
+            <pre>
+اسنپ، اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی تردد شهری، به یک سوپر‌اپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ راه‌حلی جدید و ساده است که با استفاده از آن تنها با یک اپلیکیشن می‌توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از جمله سفارش غذا، پزشک و مشاور آنلاین، خرید از سوپرمارکت‌ها و فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)، رزرو هتل، پرداخت قبض و خرید شارژ استفاده کنید.</pre
+            >
           </div>
         </article>
 
@@ -441,42 +388,47 @@
 
         <article id="pr-two">
           <div class="pr-tw-col">
-            <img src="./img/product-img/210x190-easy.png" alt="بشکن" />
+            <div class="pr_tw_col_img">
+              <img src="./img/product-img/210x190-easy.png" alt="بشکن" />
+            </div>
 
             <p class="pr-col">آسان</p>
 
-            <p class="pr-tx">
+            <pre>
               برای استفاده از هر کدام از خدمات سوپراپ اسنپ کافی است وارد
               اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
-            </p>
+            </pre>
           </div>
 
           <div class="pr-tw-col">
-            <img src="./img/product-img/210x190-fast.png" alt="سرعت" />
+            <div class="pr_tw_col_img">
+              <img src=./img/product-img/210x190-fast.png alt="سرعت" />
+            </div>
 
             <p class="pr-col">سریع</p>
 
-            <p class="pr-tx">
-              قرار گرفتن خدمات مختلف در یک پلت فرم به صرفه جویی در زمان کمک می
-              کند. سوپراپ اسنپ پاسخی سریع به نیازهای روزمره ی شماست.
-            </p>
+            <pre>
+              برای استفاده از هر کدام از خدمات سوپراپ اسنپ کافی است وارد
+              اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
+            </pre>
           </div>
-
+          
           <div class="pr-tw-col">
-            <img src="./img/product-img/210x190-eco.png" alt="به صرفه" />
+            <div class="pr_tw_col_img">
+              <img src="./img/product-img/210x190-eco.png" alt="به صرفه" />
+            </div>
 
             <p class="pr-col">به صرفه</p>
 
-            <p class="pr-tx">
+            <pre>
               سوپراپ اسنپ علاوه بر زمان در هزینه های شما نیز صرفه جویی می کند تا
               بهترین خدمات را با قیمتی منطقی دریافت کنید.
-            </p>
+            <pre>
           </div>
         </article>
 
         <!-- Product Two End -->
 
-        <!-- Product Three Start -->
 
         <article class="main-box-art2">
           <p>در کمتر از 10 دقیقه ثبت نام کنید و به ناوگان اسنپ بپیوندید.</p>
@@ -788,7 +740,5 @@
     </footer>
 
     <!-- section article End -->
-
-    <script src="./script/main.js"></script>
   </body>
 </html>

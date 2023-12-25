@@ -1,5 +1,7 @@
 @use "./type.scss" as *;
 @use "./queries.scss" as *;
+@use "./slider.scss" as *;
+@use "../font-fa.css" as *;
 
 
 /* ================ Reset Css ================ */
@@ -12,12 +14,26 @@
 }
   
   /* ================ End Reset Css ================ */
-  
+
+  /* ================ Start of Value ================ */
+
   body {
     font-family: 'IRANSansMobile-fa' !important;
     margin: 0;
     padding: 0;
 }
+
+pre {
+    color: gray;
+    text-align: justify;
+    white-space: normal;
+    font-family: "IRANSansMobile-fa" !important;
+    font-size: 14px;
+    word-spacing: normal;
+    margin: 8px 0 8px 0;
+}
+
+  /* ================ End of Value ================ */
 
   /* ================ NavBar Start ================ */
   
@@ -180,6 +196,8 @@
    display: none;
    @include small-break {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
     margin: 4rem 0;
     justify-content: center;
   
@@ -188,8 +206,6 @@
         height: 47px;
         width: 160px;
       }
-  
-      padding-left: 2.5rem;
     }
    }
   }
@@ -276,90 +292,126 @@
   
   /* ================ SliderShow start ================ */
   
-  .w3-content {
-    margin-left: auto;
-    margin-right: auto;
+
+  .navigation-wrapper{
+    direction: ltr;
+    scale: 80% 80%;
   }
-  
-  .w3-display-container {
-    position: relative;
-  }
-  
-  .mySlides {
-    display: none;
-    border-radius: 2rem;
-  }
-  
-  .w3-container {
-    &:after, &:before {
-      content: "";
-      display: table;
-      clear: both;
+
+  #my-keen-slider {
+    border-radius: 9px;
+    direction: ltr;
+    div img {
+        max-width: max-content;
     }
+}
+
+
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 25vh;
+  @include extra-small-break {
+    height: 50vh;
   }
-  
-  .w3-section {
-    margin-top: 16px !important;
-    margin-bottom: 16px !important;
-  }
-  
-  .w3-large {
-    font-size: 18px !important;
-  }
-  
-  .w3-text-white {
-    color: #fff !important;
-  }
-  
-  .w3-badge {
-    height: 13px;
-    width: 13px;
-    padding: 0;
-  }
-  
-  .w3-display-bottommiddle {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-  }
-  
-  .w3-left {
-    float: left !important;
-  }
-  
-  .w3-right {
-    float: right !important;
-  }
-  
-  .w3-hover-text-khaki:hover {
-    color: #b4aa50 !important;
-  }
-  
-  .w3-badge {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    height: 13px;
-    width: 13px;
-    padding: 0;
-    text-align: center;
+}
+
+.number-slide1 {
+ background-image: url('../img/slider-img/Market.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+
+.number-slide2 {
+    background-image: url('../img/slider-img/Driver.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.number-slide3 {
+    background-image: url('../img/slider-img/Food.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.number-slide4 {
+    background-image: url('../img/slider-img/Club.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dots {
+    max-width: fit-content;
+    position: relative;
+    bottom: 30px;
+    margin: auto;
+    background-color: rgb(255 255 255 / 31%);
+    display: flex;
+    justify-content: center;
+    padding: 7px 5px;
+    border-radius: 25px;
+}
+
+.dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-color: hsla(0,0%,100%,.31);
     border-radius: 50%;
-  }
-  
-  .w3-border {
-    border: 1px solid #ccc !important;
-  }
-  
-  .w3-transparent {
-    background-color: transparent !important;
-  }
-  
-  .w3-hover-white:hover {
-    color: #000 !important;
-    background-color: #fff !important;
-  }
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active {
+  background: white;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+  fill: "#fff";
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--left {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--right {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
   
   /* ================ SliderShow End ================ */
   
@@ -367,22 +419,35 @@
   
   #pr-one {
     display: flex;
+    flex-direction: column;
+    @include mid-break {
+        flex-direction: row;
+        align-items: flex-start;
+    }
   }
   
-  .pro-div {
-    width: 50%;
-  
-    h2 {
-      font-weight: bold;
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      color: gray;
+  .pro-div:first-of-type {
+    background-image: url(../img/product-img/super-app.jpg);
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+    @include mid-break {
+        width: 49%;
+        height:60vh;
+    }
     }
   
-    p {
-      color: gray;
+    .pro-div:last-of-type {
+        @include mid-break {
+            width: 49%;
+        }   
+        margin: 0 16px 0 16px;
+    h2 {
+      font-weight: bold;
       text-align: justify;
-      width: 75%;
+      font-size: 22px;
+      color: gray;
+      margin: 16px 0 8px 0;
     }
   }
   
@@ -390,24 +455,50 @@
   
   /* ================ Product Two Start ================ */
   
-  #pr-two {
-    margin-top: -4rem;
-    margin-bottom: 8rem;
+//   #pr-two {
+//     margin-top: -4rem;
+//     margin-bottom: 8rem;
+//     display: flex;
+//     justify-content: center;
+//     gap: 3rem;
+//   }
+
+#pr-two {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-  }
+    flex-direction: column;
+    margin: auto;
+    @include small-break {
+        flex-direction: row;
+    }
+    @include mid-break {
+        justify-content: center;
+    }
+}
   
   .pr-tw-col {
-    background-color: #f2f5f8;
-    height: 190px;
-    width: 246px;
-    border-radius: 1rem;
+    margin: 16px;
+    @include small-break {
+        width: 40%;
+        // width: 33.3%;
+    }
+    @include mid-break {
+        width: 22%;
+        position: relative;
+        top: -120px;
+    }
   }
+
+  .pr_tw_col_img {
+    background-color: #f2f5f8;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+  }
+
   
   .pr-col {
-    margin: 1rem 0;
-    font-size: 1rem;
+    margin: 16px 0;
+    font-size: 16px;
     font-weight: bold;
     color: grey;
   }
