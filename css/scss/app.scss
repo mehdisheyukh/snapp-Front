@@ -521,8 +521,7 @@ pre {
     text-align: center;
     display: flex;
     flex-direction: column;
-  
-
+    align-items: center;
     p {
       &:first-child {
         font-size: 36px;
@@ -561,38 +560,57 @@ pre {
   }
   
   #table-str {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    margin-bottom: 20px;
+    @include mid-break {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   
   .table-str-all {
     display: flex;
-    flex-direction: row-reverse;
-    background-color: white;
-    border-radius: 1rem;
+    flex-direction: column;
     align-items: center;
-    text-align: justify;
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 7%;
+    font-size: 14px;
+    img {
+      width: 80px;
+      padding-bottom: 10px;
+      @include mid-break {
+        width: 120px;
+      }
+    }
+    h1{
+    text-align: right;
+    width: 100%;
+    }
     @include mid-break {
-    height: 200px;
-    width: 484px;
-    padding: 0 1rem;
-    margin: 0.7rem 0.7rem;
+      width: 40%;
+      padding: 5% 2%;
+      margin: 12px 12px;
+      flex-direction: unset;
+    }
+    pre {
+      text-align: right;
     }
   }
-  
-  #table-str div:last-child {
-    margin-bottom: 2rem;
-  }
+
   
   /* ================ Product Three End ================ */
   
   .nav-list2 {
     display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
     list-style-type: none;
-    padding: 2rem 4rem;
-    gap: 18px;
+    gap: 12px;
     justify-content: center;
-  
+    
     li a {
       text-decoration: none;
       color: black;
